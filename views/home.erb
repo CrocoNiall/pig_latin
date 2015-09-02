@@ -1,8 +1,18 @@
-<h1> <%= @title  %></h1>
-<% end %>
+<html>
 
-<form action="/translate" method="post">
-  <input type="text" name='text' autofocus>
-  <button>Navigate Me!</button>
+  <head>
+    <title>Pig Latin</title>
+  </head>
 
-</form>
+  <body>
+    <h1> <%= @title  %></h1>
+    <form action="/translate" method="post">
+      <input type="text" name='text' autofocus>
+      <button>Translate!!</button>
+
+    </form>
+
+    <p><%= @pig_text %></p>
+
+  </body>
+</html>
