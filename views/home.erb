@@ -2,17 +2,18 @@
 
   <head>
     <title>Pig Latin</title>
+    <link rel="stylesheet" type='text/css' href="/styles.css">
   </head>
+    <div id='container'>
+      <body>
+        <h1> <%= @title  %></h1>
+        <form action="/translate" method="post">
+          <input type="text" name='text' autofocus>
+          <button>Translate!!</button>
 
-  <body>
-    <h1> <%= @title  %></h1>
-    <form action="/translate" method="post">
-      <input type="text" name='text' autofocus>
-      <button>Translate!!</button>
+        </form>
 
-    </form>
-
-    <p><%= @pig_text %></p>
-
+        <p><%= @pig_text %></p>
+    </div>
   </body>
 </html>
